@@ -31,12 +31,12 @@
 
 	    <init-param>
 	        <param-name>dbUserName</param-name>
-	        <param-value>vm_user3897</param-value>
+	        <param-value>user</param-value>
 	    </init-param>
 
 	    <init-param>
 	        <param-name>dbPassword</param-name>
-	        <param-value>vm_pass9234</param-value>
+	        <param-value>pass</param-value>
 	    </init-param>
 
     </servlet>
