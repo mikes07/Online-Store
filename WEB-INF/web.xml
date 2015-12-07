@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+		 version="3.1">
+
+    <servlet>
+
+        <servlet-name>ControllerServlet</servlet-name>
+	    <servlet-class>ControllerServlet</servlet-class>
+
+	    <init-param>
+	        <param-name>base</param-name>
+	        <param-value>http://localhost:8080/onlinestore2</param-value>
+	    </init-param>
+
+	    <init-param>
+	        <param-name>jdbcDriver</param-name>
+	        <param-value>com.mysql.jdbc.Driver</param-value>
+	    </init-param>
+
+	    <init-param>
+	        <param-name>imageUrl</param-name>
+	        <param-value>http://localhost:8080/onlinestore2/images/</param-value>
+	    </init-param>
+
+	    <init-param>
+	        <param-name>dbUrl</param-name>
+	        <param-value>jdbc:mysql://localhost:3306/onlinestore2</param-value>
+	    </init-param>
+
+	    <init-param>
+	        <param-name>dbUserName</param-name>
+	        <param-value>vm_user3897</param-value>
+	    </init-param>
+
+	    <init-param>
+	        <param-name>dbPassword</param-name>
+	        <param-value>vm_pass9234</param-value>
+	    </init-param>
+
+    </servlet>
+
+	<servlet-mapping>
+		<servlet-name>ControllerServlet</servlet-name>
+		<url-pattern>/ControllerServlet</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>redirect.jsp</welcome-file>
+	</welcome-file-list>
+  
+</web-app>
